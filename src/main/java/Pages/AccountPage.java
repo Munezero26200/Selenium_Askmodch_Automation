@@ -15,6 +15,7 @@ public class AccountPage {
     private By loginButton = By.cssSelector("button[name='login']");
     private By forgotPasswordLink = By.cssSelector("p.woocommerce-LostPassword a");
     //private By logoutButton = By.cssSelector(".woocommerce-MyAccount-navigation-link--customer-logout a");
+
     private By orderLink = By.linkText("Orders");
 
     public AccountPage(WebDriver driver){

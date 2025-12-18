@@ -41,6 +41,7 @@ public class HomePage {
     private By accessoriesLink = By.linkText("Accessories");
 
     public AccessoriesPage clickAccessoriesLink() {
+
         driver.findElement(accessoriesLink).click();
         return new AccessoriesPage(driver);
 

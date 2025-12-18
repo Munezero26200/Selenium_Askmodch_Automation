@@ -29,6 +29,7 @@ public class AccountManagementTests extends BaseTest {
     }
     @Test
     public void testForgotPasswordLink(){
+
         var myAccountPage = homePage.clickAccountLink();
        var lostPasswordPage = myAccountPage. clickLostYourPasswordLink();
        lostPasswordPage.enterUsernameOrEmail("Aline");

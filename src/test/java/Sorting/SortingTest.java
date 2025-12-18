@@ -12,6 +12,7 @@ public class SortingTest extends BaseTest {
     }
     @Test
     public void testSortingProductbyAverageRating(){
+
         var sortProd = homePage.clickShopNowButton();
         sortProd.clickSortingField();
         sortProd.sortProducts("Sort by average rating");

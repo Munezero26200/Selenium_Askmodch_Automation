@@ -22,5 +22,6 @@ public class LostPasswordPage {
     //Reset password
     public void clickResetPasswordButton(){
         driver.findElement(resetButton).click();
+
     }
 }

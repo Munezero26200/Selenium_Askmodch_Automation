@@ -42,7 +42,7 @@ public class PickProductsTest extends BaseTest {
          checkoutForm.enterStateName("Gasabo");
          checkoutForm.getStateName();
          //postcode
-         checkoutForm.enterPostCode(0000);
+         checkoutForm.enterPostCode(00);
          checkoutForm.getPostCode();
          //email
          checkoutForm.enterEmail("alinemunezero920@gmail.com");
