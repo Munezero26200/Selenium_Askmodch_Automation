@@ -78,6 +78,12 @@ public class AccountPage {
         }
     }
 
+    public String loginConfirmation(){
+        String message = driver.findElement(By.cssSelector("div.woocommerce-MyAccount-content p")).getText();
+        System.out.println(message);
+        return message;
+    }
+
     //forgot password
 
     public LostPasswordPage clickLostYourPasswordLink(){
