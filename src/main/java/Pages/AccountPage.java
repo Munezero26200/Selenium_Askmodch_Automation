@@ -10,7 +10,7 @@ public class AccountPage {
     private By emailField = By.cssSelector("#reg_email");
     private By passwordField = By.cssSelector("#reg_password");
     private By registerButton = By.cssSelector("button[name='register']");
-    private By loggedUsername = By.cssSelector("#username");
+    private By loggedUsername = By.id("username");
     private By loggedPassword = By.cssSelector("#password");
     private By loginButton = By.cssSelector("button[name='login']");
     private By forgotPasswordLink = By.cssSelector("p.woocommerce-LostPassword a");
@@ -90,9 +90,17 @@ public class AccountPage {
         driver.findElement(forgotPasswordLink).click();
         return new LostPasswordPage(driver);
     }
-    //Orders
-    public void clickOrdersLink(){
-        driver.findElement(orderLink).click();
+
+
+    //Orders page
+
+    private By orderField = By.linkText("Orders");
+
+    public OrderPage clickOrders(){
+//        isAllFieldsFilled();
+//        ClickLoginButtonToBeLoggedIn();
+        driver.findElement(orderField).click();
+        return new OrderPage(driver);
     }
 
 }
