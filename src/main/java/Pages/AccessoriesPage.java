@@ -14,4 +14,6 @@ public class AccessoriesPage {
     public String getAccessoriesHeading(){
         return driver.findElement(accessoriesTitle).getText();
     }
+    //
+
 }

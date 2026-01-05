@@ -50,6 +50,7 @@ public class StorePage {
     }
     public void clickSearchButton(){
         if(isSearchFieldContainProductName()){
+
             driver.findElement(searchButton).click();
         }else{
             System.out.println("Enter a product name");

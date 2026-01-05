@@ -11,5 +11,6 @@ public class WomenPage {
     }
     public String getWomenHeading(){
         return driver.findElement(womenTitle).getText();
+
     }
 }

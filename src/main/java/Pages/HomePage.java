@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 
     private WebDriver driver;
-    private By shopNowButton = By.cssSelector(".wp-block-button .wp-block-button__link[href='/store']");
-    private By accountLink = By.cssSelector("li#menu-item-1237 a.menu-link");
+    private By shopNowButton = By.cssSelector(".wp-block-button.wp-block-button__link[href='/store']");
+    private By accountLink = By.linkText("Account");
 
 
     public HomePage(WebDriver driver) {
@@ -41,6 +41,7 @@ public class HomePage {
     private By accessoriesLink = By.linkText("Accessories");
 
     public AccessoriesPage clickAccessoriesLink() {
+
         driver.findElement(accessoriesLink).click();
         return new AccessoriesPage(driver);
 

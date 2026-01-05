@@ -90,6 +90,7 @@ public void checkWayOfPayment(String paymentMethod){
            if(label.getText().contains(paymentMethod)){
               String forId =  label.getAttribute("for");
               driver.findElement(By.id(forId)).click();
+
            }
        }
 }
