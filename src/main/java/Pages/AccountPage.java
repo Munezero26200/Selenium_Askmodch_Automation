@@ -12,7 +12,7 @@ public class AccountPage {
     private By registerButton = By.cssSelector("button[name='register']");
     private By loggedUsername = By.cssSelector("#username");
     private By loggedPassword = By.cssSelector("#password");
-    private By loginButton = By.cssSelector("button[name='login']");
+    private By loginbutton = By.cssSelector("button[name='login']");
     private By forgotPasswordLink = By.cssSelector("p.woocommerce-LostPassword a");
     //private By logoutButton = By.cssSelector(".woocommerce-MyAccount-navigation-link--customer-logout a");
     private By orderLink = By.linkText("Orders");
@@ -71,7 +71,7 @@ public class AccountPage {
     }
     public void ClickLoginButtonToBeLoggedIn(){
         if(isAllFieldsFilled()){
-            driver.findElement(loginButton).click();
+            driver.findElement(loginbutton).click();
         }else{
             System.out.println("username and password are required!");
         }
