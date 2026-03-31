@@ -12,6 +12,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp(){
+
         driver = new ChromeDriver();
         driver.get("https://askomdch.com/");
         homePage = new HomePage(driver);

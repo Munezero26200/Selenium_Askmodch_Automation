@@ -12,5 +12,6 @@ public class CartPage {
     public CheckoutPage clickProceedToCheckout(){
         driver.findElement(proceedToCheckoutBtn).click();
         return new CheckoutPage(driver);
+
     }
 }
